@@ -51,6 +51,6 @@ Atualiza uma tarefa caso os valores não forem vazios.
 
 Deleta uma tarefa.
 
-## Lisença
+## Licença
 
 O framework Laravel é open-sourced software licensed sob a [MIT license](https://opensource.org/licenses/MIT).
