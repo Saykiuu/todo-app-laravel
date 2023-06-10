@@ -69,7 +69,7 @@ class TodoController extends Controller
             $user->password = Hash::make('123');
             $user->email = 'tokenEmail@exemple.com';
             $user->save();
-            return redirect('/')->with('msg', 'Token criado!');
+            return redirect('/')->with('msg', 'Usuário logado!');
         }else{
             return redirect('/')->with('msg', 'Ja existe um token!');
         }
@@ -81,7 +81,7 @@ class TodoController extends Controller
             ['email', 'tokenEmail@exemple.com']
         ])->delete();
 
-        return redirect('/')->with('msg', 'Usuário removido!');
+        return redirect('/')->with('msg', 'Usuário deslogado!');
     }
 
     public function store(Request $request){

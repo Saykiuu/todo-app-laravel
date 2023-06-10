@@ -26,8 +26,8 @@
         <div class="d-flex justify-content-between  py-4">    
             <form action="/" method="get">
                 <div class="d-flex">
-                    <input type="text" class="form-control mx-2 col-4" name="search" placeholder="Pesquisar.." value="{{$search }}">
-                    <button type="submit" class="btn btn-primary">
+                    <input type="text" class="form-control  col-4" name="search" placeholder="Pesquisar.." value="{{$search }}">
+                    <button type="submit" class="btn btn-primary ">
                         <span class="material-icons">
                             search
                         </span>
