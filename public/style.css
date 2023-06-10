@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500');
+
+*:not(.material-icons) {
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+ 
+        background-color: #f9f9f9;
+}
+section{
+    
+    padding: 16px;
+}
+
+th {
+    background: white;
+    position: sticky;
+    top: 0;
+    /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse;
+}
+
+
+
+
+td label{
+    width: 100%;
+    display: block;
+}
+
+.btn-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 5px 3px #00000050;
+    cursor: pointer;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.container-link{
+    display: flex;
+    justify-content: center;
+}
+
+.content-msg{
+    width: 50%;
+    position: fixed;
+    top: 50px;
+    left: 25%;
+    z-index: 3;
+    animation: aparecer 5s;
+    transform: translateY(-150px);
+}
+
+@keyframes aparecer {
+    0%{
+        transform: translateY(-50px);
+        opacity: 0.1;
+    }
+    15% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    85% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        
+        transform: translateY(-50px);
+        opacity: 0.1;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+#empt-list{
+    text-align: center;
+}
+
+
+.btn-icon-material{
+    cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: #e9e8e9;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.btn-icon-material:hover{
+    background-color: #e6e9fd;
+    box-shadow: 0 3px 2px #00000050;
+}
+th, td{
+    vertical-align: middle !important;
+}
+
+.th-form{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
