@@ -20,7 +20,7 @@ Route::get('/limparToken', [TodoController::class, 'limparToken']);
 
 
 Route::group(['middleware'=>['autentication']], function(){
-    Route::post('/tasks', [TodoController::class, 'store']);
+    Route::post('/insertTask', [TodoController::class, 'store']);
     Route::post('/updateTask', [TodoController::class, 'update']);
     Route::delete('/deleteTask', [TodoController::class, 'destroy']);
 });

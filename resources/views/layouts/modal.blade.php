@@ -7,7 +7,7 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Nova task</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="/tasks" method="POST">
+                <form action="/insertTask" method="POST">
                     <div class="modal-body">
                         @csrf
                         <div class="form-group">
